@@ -57,7 +57,7 @@ const makeTransaction = transaction => {
         const result = { id, delay };
         resolve(result);
       } else {
-        reject(error(id));
+        reject(Error(id));
       }
     }, delay);
     })
